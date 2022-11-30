@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/HowToPlay.gd" type="Script" id=1]
+
+[node name="HowToPlay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="BG" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.643137 )
+
+[node name="Title" type="Label" parent="BG"]
+anchor_right = 1.0
+margin_bottom = 65.0
+text = "How To Play"
+align = 1
+valign = 1
+
+[node name="HowTo" type="Label" parent="BG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 219.0
+margin_bottom = -213.0
+text = "Controls:
+
+Movement: WASD
+Peak Left: Hold Q
+Peak Right: Hold E
+Sprint: Hold Shift"
+
+[node name="Story" type="Label" parent="BG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 68.0
+margin_bottom = -386.0
+text = "Description:
+
+You are a researcher for the SCP foundation, a foundation dedicated to containing anomolous entites. One of these entities is SCP-076-2, aka Able. 
+Able is a inhumanly strong humanoid who whenever he can, will go on a rampage, killing several SCP staff. 
+You need to escape the facility without being detected by Able; your life depends on it.
+To escape, you must find 3 keys hidden around the map while avoiding Able."
+
+[node name="Back" type="Button" parent="BG"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -60.0
+margin_top = -80.0
+margin_right = 60.0
+margin_bottom = -40.0
+text = "Back"
+
+[connection signal="pressed" from="BG/Back" to="." method="_on_Back_pressed"]

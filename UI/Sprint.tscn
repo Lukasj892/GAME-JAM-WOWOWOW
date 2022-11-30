@@ -1,0 +1,30 @@
+[gd_scene format=2]
+
+[node name="Sprint" type="CanvasLayer"]
+
+[node name="Border" type="ColorRect" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -170.0
+margin_top = -40.0
+margin_right = -10.0
+margin_bottom = -10.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="BG" type="ColorRect" parent="Border"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -157.5
+margin_top = -27.5
+margin_right = -2.5
+margin_bottom = -2.5
+
+[node name="Bar" type="ColorRect" parent="Border/BG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+color = Color( 0.443137, 0.85098, 0.164706, 1 )
