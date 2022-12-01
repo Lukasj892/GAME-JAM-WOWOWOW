@@ -28,7 +28,7 @@ How to Hide Mouse Cursor In Godot: https://www.youtube.com/watch?v=-nNxUiHJ97Y
 ## Future Development
 
 # Created by: Group Name
-Lukas Jackson (Stage Layout, AI pathfinding and scripting, player scripting, donut)
-James Nunn(Sounds(my voice), some modeling and i did a full redeisign of the lighting and some memes)
-Winter(Modeled some characters, helped with artwork and textures)
-Mia(Modeled some of the food, and helped with UI remakes)
+#Lukas Jackson (Stage Layout, AI pathfinding and scripting, player scripting, donut)
+#James Nunn(Sounds(my voice), some modeling and i did a full redeisign of the lighting and some memes)
+#Winter(Modeled some characters, helped with artwork and textures)
+#Mia(Modeled some of the food, and helped with UI remakes)
