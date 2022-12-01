@@ -2,7 +2,7 @@ extends Control
 
 
 func _ready():
-	$BG/Label.text = "Congratulations! You found " + str(Global.keyCount) + " of 4 possible keys!"
+	$BG/Label.text = "Congratulations! You found " + str(Global.keyCount) + " of 4 possible Friends!"
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 
