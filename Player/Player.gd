@@ -5,7 +5,7 @@ onready var Camera = $Pivot/Camera
 var gravity = -30
 var cur_speed = 8
 var run_speed = 8
-var sprint_speed = 12
+var sprint_speed = 13
 var mouse_sensitivity = 0.005
 var mouse_range = 1.2
 
