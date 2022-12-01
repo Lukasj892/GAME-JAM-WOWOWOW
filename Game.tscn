@@ -1,4 +1,4 @@
-[gd_scene load_steps=129 format=2]
+[gd_scene load_steps=109 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Objects/Key.tscn" type="PackedScene" id=2]
@@ -10,7 +10,6 @@
 [ext_resource path="res://UI/Sprint.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Enemy/Able.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Game.gd" type="Script" id=10]
-[ext_resource path="res://Assets/MyStuff/Gun.obj" type="ArrayMesh" id=11]
 [ext_resource path="res://Assets/MyStuff/DoubleDoor.obj" type="ArrayMesh" id=12]
 [ext_resource path="res://Exit/Exit.gd" type="Script" id=13]
 [ext_resource path="res://Objects/Lamp.tscn" type="PackedScene" id=14]
@@ -262,77 +261,6 @@ size = Vector2( 100, 100 )
 
 [sub_resource type="SpatialMaterial" id=2]
 albedo_color = Color( 0.266667, 0.266667, 0.266667, 1 )
-
-[sub_resource type="CylinderMesh" id=61]
-top_radius = 3.0
-bottom_radius = 3.0
-height = 3.25
-
-[sub_resource type="SpatialMaterial" id=62]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="CubeMesh" id=63]
-size = Vector3( 0.8, 2, 0.8 )
-
-[sub_resource type="SpatialMaterial" id=64]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="CubeMesh" id=65]
-size = Vector3( 1.9, 0.5, 0.9 )
-
-[sub_resource type="SpatialMaterial" id=66]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="CubeMesh" id=67]
-size = Vector3( 2, 1.75, 1 )
-
-[sub_resource type="SpatialMaterial" id=68]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="CubeMesh" id=69]
-size = Vector3( 0.75, 1.5, 0.75 )
-
-[sub_resource type="SpatialMaterial" id=70]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="CubeMesh" id=71]
-size = Vector3( 0.5, 0.1, 0.5 )
-
-[sub_resource type="SpatialMaterial" id=72]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="CubeMesh" id=73]
-size = Vector3( 1, 1, 1 )
-
-[sub_resource type="SpatialMaterial" id=74]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="CubeMesh" id=75]
-size = Vector3( 2, 1, 0.1 )
-
-[sub_resource type="SpatialMaterial" id=76]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="CylinderMesh" id=77]
-top_radius = 0.1
-bottom_radius = 0.1
-height = 2.1
-
-[sub_resource type="SpatialMaterial" id=78]
-albedo_color = Color( 0.321569, 0.321569, 0.321569, 1 )
-metallic = 0.25
-
-[sub_resource type="SpatialMaterial" id=79]
-albedo_color = Color( 0.596078, 0.596078, 0.596078, 1 )
-metallic = 0.55
 
 [sub_resource type="SpatialMaterial" id=81]
 albedo_color = Color( 0.32549, 0.32549, 0.32549, 1 )
@@ -876,67 +804,6 @@ light_energy = 3.0
 omni_range = 3.0
 omni_attenuation = 2.0
 
-[node name="StatueBase" type="CSGMesh" parent="Maze"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -27.5 )
-mesh = SubResource( 61 )
-material = SubResource( 62 )
-
-[node name="Leg1" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 2.646, 0 )
-mesh = SubResource( 63 )
-material = SubResource( 64 )
-
-[node name="Leg2" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 2.646, 0 )
-mesh = SubResource( 63 )
-material = SubResource( 64 )
-
-[node name="LowerBody" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 1, 0, 0, 0, 0.999048, -0.0436194, 0, 0.0436194, 0.999048, 0, 3.9, 0 )
-mesh = SubResource( 65 )
-material = SubResource( 66 )
-
-[node name="UpperBody" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 1, 0, 0, 0, 0.996195, 0.0871557, 0, -0.0871557, 0.996195, 0, 5, 0 )
-mesh = SubResource( 67 )
-material = SubResource( 68 )
-
-[node name="Arm1" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, -0.852211, 4.9714, 0.593197 )
-mesh = SubResource( 69 )
-material = SubResource( 70 )
-
-[node name="Arm2" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 0.866025, 0.482963, -0.129409, 0, 0.258819, 0.965926, 0.5, -0.836516, 0.224144, 0.859082, 5.13944, 0.456358 )
-mesh = SubResource( 69 )
-material = SubResource( 70 )
-
-[node name="Neck" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.91915, 0 )
-mesh = SubResource( 71 )
-material = SubResource( 72 )
-
-[node name="Head" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.44511, 0 )
-mesh = SubResource( 73 )
-material = SubResource( 74 )
-
-[node name="Chest" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( 1, 0, 0, 0, 0.996195, 0.0871557, 0, -0.0871557, 0.996195, 0, 5.41687, 0.51922 )
-mesh = SubResource( 75 )
-material = SubResource( 76 )
-
-[node name="Curve" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( -2.18557e-07, -1, 4.44089e-16, 4.98097, -4.35451e-08, 0.0435779, -0.435779, 3.8097e-09, 0.498097, 0, 4.59388, -0.477547 )
-operation = 2
-mesh = SubResource( 77 )
-material = SubResource( 78 )
-
-[node name="Gun" type="CSGMesh" parent="Maze/StatueBase"]
-transform = Transform( -1.31134e-07, -1.02606, 2.81908, 0, 2.81908, 1.02606, -3, 4.48505e-08, -1.23226e-07, -0.282171, 4.87985, 1.0351 )
-mesh = ExtResource( 11 )
-material = SubResource( 79 )
-
 [node name="Exit" type="Area" parent="Maze"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -49.468 )
 script = ExtResource( 13 )
@@ -1039,7 +906,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 77.2614, 0.237575, 14.5676 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8914, 0.316767, 21.222 )
 
 [node name="Spatial8" parent="Furnanture Container/Lamp" instance=ExtResource( 14 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0574, 0.395958, 44.753 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0574, -0.213468, 44.753 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.029073, -0.999577, 0, 0.999577, 0.029073, -7.62749, 3.37046, -49.4673 )
