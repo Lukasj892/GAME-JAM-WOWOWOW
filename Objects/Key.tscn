@@ -25,7 +25,6 @@ radius = 0.35
 script = ExtResource( 2 )
 
 [node name="key" type="MeshInstance" parent="."]
-visible = false
 mesh = SubResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
